@@ -1,0 +1,234 @@
+body{
+
+    
+    display: grid;
+    grid-template-columns: 1fr 376px 50px 450px 50px 376px 1fr;
+    grid-template-rows: 70px 100px 2fr 100px 1fr 1fr 2fr 3fr 1fr 50px ;
+    grid-template-areas: 
+    "allBlank LOGO allBlank3 headerLinks blankHeader3 headerButton allBlank2"
+    "blankSlider1 blankSlider1 blankSlider1 blankSlider1 blankSlider1 blankSlider1 blankSlider1"
+    "blankSlider3 sliderText sliderText sliderText sliderImage sliderImage blankSlider4"
+    "blankSlider2 blankSlider2 blankSlider2 blankSlider2 blankSlider2 blankSlider2 blankSlider2"
+    "allBlankTopMain1 allBlankTopMain1 allBlankTopMain1 allBlankTopMain1 allBlankTopMain1 allBlankTopMain1 allBlankTopMain1"
+    "midMainBlank1 midMainText1 midMainBlank2 midMainImage midMainBlank4 midMainText2 midMainBlank3"
+    "midMainBlank1 midMainText3 midMainBlank2 midMainImage midMainBlank4 midMainText4 midMainBlank3"
+    "allBlankBottomMain1 bottomMainImage allBlankBottomMain2 bottoMain4 bottoMain4 bottoMain4 allBlankBottomMain3"
+    "allBlankFooter footerLink1 allBlankFooter2 footerLink2 allBlankFooter4 footerLink3 allBlankFooter3"
+    "footerPrimero footerPrimero footerPrimero footerPrimero footerPrimero footerPrimero footerPrimero";
+    
+}
+
+//BlankLines
+
+
+
+//Header
+.logo{
+    grid-area: LOGO;
+    background-color: #F8F6EE;
+}
+.headerLinks{
+    grid-area: headerLinks;
+    background-color: #F8F6EE;
+    padding: 40px;
+}
+
+.headerButton{
+    grid-area: headerButton;
+    background-color: #F8F6EE;
+    padding-top: 20px;
+    padding-left: 150px;
+    
+
+}
+.allBlank{
+    grid-area: allBlank;
+    background-color:$background-color;
+}
+
+.allBlank3{
+    grid-area: allBlank3;
+    background-color:$background-color;
+}
+.header3{
+    grid-area: blankHeader3;
+    background-color:$background-color;
+}
+.allBlank2{
+    grid-area: allBlank2;
+    background-color: $background-color;
+}
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+//Slider
+.blankSlider1{
+    grid-area: blankSlider1;
+    background-color:$slider-color;
+}
+
+.blankSlider2{
+    grid-area: blankSlider2;
+    background-color:$slider-color;
+}
+.blankSlider3{
+    grid-area: blankSlider3;
+    background-color: $slider-color;
+}
+.blankSlider4{
+    grid-area: blankSlider4;
+    background-color: $slider-color;
+}
+.sliderText{
+    grid-area: sliderText;
+    background-color:  $slider-color;
+}
+
+.sliderImage{
+    grid-area: sliderImage;
+    background-color: $slider-color;
+}
+//////////////////////////////////////////////////////////////////
+
+
+//MidMain
+.allBlankTopMain1{
+    grid-area: allBlankTopMain1;
+    background-color:$mid-main-color;
+}
+.midMainText1{
+    grid-area: midMainText1;
+    background-color: $mid-main-color;
+}
+.midMainText2{
+    grid-area: midMainText2;
+    background-color:$mid-main-color;
+}
+
+.midMainImage{
+    grid-area: midMainImage;
+    background-color: $mid-main-color;
+    align-items: center;
+    justify-items: center;
+}
+.midMainText3{
+    grid-area: midMainText3;
+    background-color: $mid-main-color;
+}
+.midMainText4{
+    grid-area: midMainText4;
+    background-color: $mid-main-color;
+}
+
+.midMainBlank1{
+    grid-area: midMainBlank1;
+    background-color:$mid-main-color;
+}
+
+.midMainBlank2{
+    grid-area: midMainBlank2;
+    background-color:$mid-main-color;
+}
+.midMainBlank3{
+    grid-area: midMainBlank3;
+    background-color: $mid-main-color;
+}
+.midMainBlank4{
+    grid-area: midMainBlank4;
+    background-color: $mid-main-color;
+}
+//////////////////////////////////////////////////////////
+
+
+
+.bottomMainImage{
+    grid-area: bottomMainImage;
+    background-color: $background-color;
+    padding-top: 30px;
+}
+.bottoMain4{
+    grid-area: bottoMain4;
+    background-color: $background-color;
+    padding-top: 100px;
+}
+
+.allBlankBottomMain1{
+    grid-area: allBlankBottomMain1;
+    background-color:$background-color;
+}
+
+.allBlankBottomMain2{
+    grid-area: allBlankBottomMain2;
+    background-color: $background-color;
+}
+
+.allBlankBottomMain3{
+    grid-area: allBlankBottomMain3;
+    background-color: $background-color;
+}
+
+
+//Footer
+.footerPrimero{
+    grid-area: footerPrimero;
+    background-color: $footer-color;
+}
+.footerLink1{
+    grid-area: footerLink1;
+    background-color: $footer-color;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 375;
+    grid-template-areas: "footerDiv1 footerDiv2";
+}
+.footerDiv1{
+    grid-area: footerDiv1;
+}
+.footerDiv2{
+    grid-area: footerDiv2;
+    padding-left: 60px;
+}
+
+.footerLink2{
+    grid-area: footerLink2;
+    background-color: $footer-color;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 375;
+    grid-template-areas: "footerDiv3 footerDiv4";
+}
+
+.footerDiv3{
+    grid-area: footerDiv3;
+}
+.footerDiv4{
+    grid-area: footerDiv4;
+    padding-left: 60px;
+}
+
+
+
+
+.footerLink3{
+    grid-area: footerLink3;
+    background-color: $footer-color;
+}
+
+
+.allBlankFooter{
+    grid-area: allBlankFooter;
+    background-color: $footer-color;
+}
+.allBlankFooter2{
+    grid-area: allBlankFooter2;
+    background-color: $footer-color;
+}
+.allBlankFooter3{
+    grid-area: allBlankFooter3;
+    background-color:$footer-color;
+}
+
+.allBlankFooter4{
+    grid-area: allBlankFooter4;
+    background-color:$footer-color;
+}
